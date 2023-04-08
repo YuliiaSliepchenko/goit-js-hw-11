@@ -4,10 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./sass/index.scss" />
-    <script type="module" src="./index.js"></script>
+    <script type="module" src="./js/index.js"></script>
   </head>
   <body>
-    <form class="search-form" id="search-form">
+    <section class="galery- section">
+      <div class="conteiner">
+    <form class="search-form js-search-form" id="search-form">
       <input
         type="text"
         name="searchQuery"
@@ -15,6 +17,11 @@
         placeholder="Search images..."
       />
       <button type="submit">Search</button>
+      <ul class="gallary js-gallary list"></ul>
+      <button type="button" class="load-more js-load-more is-hidden">Load more</button>
+    </div>
+    </section>
+    <script src="./js/gallary.js" type="module"></script>
     </form>
 
    
