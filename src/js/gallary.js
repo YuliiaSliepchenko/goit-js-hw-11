@@ -4,7 +4,7 @@ import { UnsplashApi } from './unsplash-api';
 import { renderCards } from './gellary-card';
 
 const searchFormEl = document.querySelector('.search-form');
-const galleryEl = document.querySelector('.gallary');
+const galleryEl = document.querySelector('.js-gallery');
 const loadMoreBtnEl = document.querySelector('.load-more');
 let pageCount = null;
 
@@ -25,10 +25,10 @@ const unsplashApi = new UnsplashApi();
       const {data: {hits,totalHits}} = await unsplashApi.fetchPhotosByQuery()
 
      pageCount = Math.floor(totalHits / 40);
-
+     galleryEl.innerHTML = '';
       Notify.info(`Hooray! We found ${totalHits} images.`); 
       if (totalHits === 0){
-        galleryEl.innerHTML = '';
+        
         loadMoreBtnEl.classList.add('is-hidden');  
         Notify.failure(
             'Sorry, there are no images matching your search query. Please try again.')

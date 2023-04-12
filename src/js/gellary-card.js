@@ -32,7 +32,7 @@ const markUp = array.map (({webformatURL,largeImageURL,tags,likes, views, commen
     </div>`;
 })
 .join("");
-galleryEl.innerHTML = markUp;
+galleryEl.insertAdjacentHTML ("beforeend",markUp);
 }
 console.log(renderCards);
 
