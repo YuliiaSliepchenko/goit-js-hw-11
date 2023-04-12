@@ -16,15 +16,11 @@ export class UnsplashApi{
             orientation: 'horizontal',
             safesearch: 'true',
             page: this.page,
-            per_page: 20,
+            per_page: 40,
             key: UnsplashApi.API_KEY,
           });
        return axios.get(
-            `${UnsplashApi.BASE_URL}?${searchParams}` ).then(
-                response => {
-    
-            return response.data;
+            `${UnsplashApi.BASE_URL}?${searchParams}` )
+
         }
-      );
     }
-}

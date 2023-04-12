@@ -1,4 +1,4 @@
-import '../../src/style.css';
+import '../css/style.css';
 
 const galleryEl = document.querySelector(".gallary-img");
 console.log(galleryEl);
@@ -11,7 +11,10 @@ const markUp = array.map (({webformatURL,largeImageURL,tags,likes, vievs, commen
       <img src="${webformatURL}"
        href = "${largeImageURL}" 
        alt="${tags}"
-        loading="lazy" />
+        loading="lazy"
+        width="400"
+        heigth= "400"
+        />
       <div class="info">
         <p class="info-item">
           Likes: ${likes}
