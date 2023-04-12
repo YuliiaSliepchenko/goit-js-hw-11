@@ -7,7 +7,7 @@
     <script type="module" src="./js/index.js"></script>
   </head>
   <body>
-    <section class="galery- section">
+    <section class="galery section">
       <div class="conteiner">
     <form class="search-form js-search-form" id="search-form">
       <input
@@ -15,14 +15,18 @@
         name="searchQuery"
         autocomplete="off"
         placeholder="Search images..."
+        required
       />
       <button type="submit">Search</button>
-      <ul class="gallary js-gallary list"></ul>
+      </form>
+      <div class="gallery">
+      <ul class="gallary-img js-gallary list"></ul>
+    </div>
       <button type="button" class="load-more js-load-more is-hidden">Load more</button>
     </div>
     </section>
     <script src="./js/gallary.js" type="module"></script>
-    </form>
+    
 
    
  
