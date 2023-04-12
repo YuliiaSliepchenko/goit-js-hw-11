@@ -21,7 +21,6 @@ justify-content: center;
 .search-form {
     align-items: center;
     gap: 30px;
-    /* margin-left: 600px; */
     display: flex;
 } 
 
@@ -97,9 +96,7 @@ justify-content: center;
   width: 400px;
   height: 400px;
 } 
-  /* .photo-card:hover {
-     transform: scale(1.03); 
-  } */
+  
 .info{
   display: flex;
   flex-wrap: wrap;
