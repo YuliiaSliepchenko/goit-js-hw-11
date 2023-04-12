@@ -51,7 +51,7 @@ unsplashApi.page += 1;
 
 try {
     const {data: {hits}} = await unsplashApi.fetchPhotosByQuery()
-    galleryEl.insertAdjacentHTML('beforeend', renderCards(hits));
+    renderCards(hits);
       if (unsplashApi.page > pageCount){
         loadMoreBtnEl.classList.add("is-hidden")
       }

@@ -16,7 +16,7 @@ const markUp = array.map (({webformatURL,largeImageURL,tags,likes, vievs, commen
         heigth= "400"
         />
       <div class="info">
-        <p class="info-item">
+      <p class="info-item">
           Likes: ${likes}
         </p>
         <p class="info-item">
