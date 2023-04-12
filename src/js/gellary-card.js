@@ -12,8 +12,8 @@ const markUp = array.map (({webformatURL,largeImageURL,tags,likes, vievs, commen
        href = "${largeImageURL}" 
        alt="${tags}"
         loading="lazy"
-        width="400"
-        heigth= "400"
+        width="320"
+        heigth= "300"
         />
       <div class="info">
       <p class="info-item">
@@ -21,8 +21,8 @@ const markUp = array.map (({webformatURL,largeImageURL,tags,likes, vievs, commen
         </p>
         <p class="info-item">
           Views: ${vievs}
-        </p>
-        <p class="info-item">
+        </p><br>
+        <br><p class="info-item">
           Comments:${comments}
         </p>
         <p class="info-item">

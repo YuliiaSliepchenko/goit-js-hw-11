@@ -11,7 +11,7 @@ body{
 }
 
 .section {
-    padding: 30px 80px;
+    padding: 30px 30px;
     display: block;
 }
 .conteiner{
@@ -88,13 +88,13 @@ justify-content: center;
     margin-bottom: 50px;
   }
   .gallary-img img {
-    width: 450px;
+    width: 320px;
     height: 300px;
     object-fit: cover;
 
   }
   .photo-card{
-  width: 450px;
+  width: 320px;
   height: 400px;
 } 
   
