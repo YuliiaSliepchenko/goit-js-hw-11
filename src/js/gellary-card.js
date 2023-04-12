@@ -6,7 +6,7 @@ console.log(galleryEl);
 
 
 export function renderCards(array){
-const markUp = array.map (({webformatURL,largeImageURL,tags,likes, vievs, comments,downloads})=> {
+const markUp = array.map (({webformatURL,largeImageURL,tags,likes, views, comments,downloads})=> {
     return`<div class="photo-card">
       <img src="${webformatURL}"
        href = "${largeImageURL}" 
@@ -20,7 +20,7 @@ const markUp = array.map (({webformatURL,largeImageURL,tags,likes, vievs, commen
           Likes: ${likes}
         </p>
         <p class="info-item">
-          Views: ${vievs}
+          Views: ${views}
         </p><br>
         <br><p class="info-item">
           Comments:${comments}

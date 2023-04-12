@@ -1,13 +1,11 @@
-// import SimpleLightbox from "simplelightbox";
-// import "simplelightbox/dist/simple-lightbox.min.css";
 import { Notify } from 'notiflix/build/notiflix-notify-aio';
 import '../css/style.css';
 import { UnsplashApi } from './unsplash-api'; 
 import { renderCards } from './gellary-card';
 
-const searchFormEl = document.querySelector('.js-search-form');
-const galleryEl = document.querySelector('.js-gallary');
-const loadMoreBtnEl = document.querySelector('.js-load-more');
+const searchFormEl = document.querySelector('.search-form');
+const galleryEl = document.querySelector('.gallary');
+const loadMoreBtnEl = document.querySelector('.load-more');
 let pageCount = null;
 
 
